@@ -24,7 +24,7 @@ btnCalcular.addEventListener("click", function(event){
     const b = parseInt(document.querySelector("#inputB").value)
     const c = parseInt(document.querySelector("#inputC").value)
 
-    const exibirResultado = document.querySelector("#exibirResultado")
+    const exibeResultado = document.querySelector("#exibeResultado")
     resultado = bhaskara(a, b, c)
-    exibirResultado.innerHTML = resultado
+    exibeResultado.innerHTML = resultado
 })

@@ -18,6 +18,6 @@ function verificaTipoTriangulo(ladoA,ladoB,ladoC){
 
      const resultadoTipoTriangulo = verificaTipoTriangulo(ladoA, ladoB, ladoC)
 
-     const campoResultado = document.querySelector("#campoResultado")
-     campoResultado.innerHTML = resultadoTipoTriangulo
+     const exibeResultado = document.querySelector("#exibeResultado")
+     exibeResultado.innerHTML = resultadoTipoTriangulo
  })

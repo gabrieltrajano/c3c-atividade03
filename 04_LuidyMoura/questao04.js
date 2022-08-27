@@ -28,6 +28,6 @@ btnProcessarArray.addEventListener("click", function(event){
     const limite = parseInt(document.querySelector("#limite").value)
 
     let resultado = criaEPecorreArray(limite)
-    const exibirResultado = document.querySelector("#exibirResultado")
-    exibirResultado.innerHTML = resultado
+    const exibeResultado = document.querySelector("#exibeResultado")
+    exibeResultado.innerHTML = resultado
 })

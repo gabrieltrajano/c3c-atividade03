@@ -7,8 +7,7 @@ function obterDecimal(nota){
 function obterNotaFinal(nota){
     const decimal = obterDecimal(nota)
 
-    // Condicional que vai fazer o arredondamento para um 
-    // número múltiplo de 5 ou nada.
+   // Verifica se o nota deve ser incrementada e o quanto deve ser incrementado
     if (decimal >= 0.58 && decimal < 0.60) {
         return nota + 2
     }  else if (decimal >= 0.80 && decimal < 0.81){
@@ -18,12 +17,8 @@ function obterNotaFinal(nota){
     }
 }
 
-function eAprovado(nota){
-    return (nota >= 40 && nota <=100) ? true : false
-}
-
 function obterStatus(nota){
-    if(eAprovado(nota)){
+    if(nota >= 40 && nota <=100){
         return "Aprovado"
     } else {
         return "Reprovado"
@@ -38,8 +33,8 @@ btnObterResultado.addEventListener("click", function(event){
     const notaBruta = parseInt(document.querySelector("#nota").value)
     const notaFinal = obterNotaFinal(notaBruta)
 
-    const exibirResultado = document.querySelector("#exibirResultado")
+    const exibeResultado = document.querySelector("#exibeResultado")
     const status = obterStatus(notaFinal)
-    exibirResultado.innerHTML = `${notaFinal} - ${status}`
+    exibeResultado.innerHTML = `${notaFinal} - ${status}`
 
 }) 
